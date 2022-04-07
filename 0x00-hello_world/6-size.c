@@ -1,23 +1,16 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-void print_line( int n)
+int main(void) 
 {
-	int i;
-	if (n > 0)
-	{
-		for (i = 0; i < n; i++)
-		{
-			_putchar (95);
-		}
-		_putchar ('\n');
-	}
-	else
-	{
-		_putchar ('\n');
-	}
+	printf("size of a char: %d byte(s)\n", sizeof(char));
+	printf("size of an int: %d byte(s)\n", sizeof(int));
+	printf("size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("size of a float: %d byte(s)\n". sizeof(float));
 
+	return (0);
 }
